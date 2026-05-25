@@ -1,0 +1,376 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+    display:flex;
+    flex-direction:column;
+}
+
+.content-wrapper{
+    flex:1;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 60px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:48px;
+    font-weight:700;
+    text-decoration:none;
+    color:orange;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:orange;
+}
+
+.active-nav{
+    color:orange !important;
+    border-bottom:2px solid orange;
+    padding-bottom:5px;
+}
+
+.user{
+    font-weight:600;
+    color:#444;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    margin-top:auto;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:28px;
+    font-size:18px;
+}
+
+/* ================= HERO ================= */
+
+.hero-section{
+    height:500px;
+    background:linear-gradient(135deg,#ff7b00,#ffb347);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin-bottom:35px;
+}
+
+/* ================= SEARCH ================= */
+
+.home-search{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.home-search form{
+    width:100%;
+    max-width:700px;
+    display:flex;
+}
+
+.home-search input{
+    flex:1;
+    padding:18px 24px;
+    border:none;
+    outline:none;
+    border-radius:50px 0 0 50px;
+    font-size:16px;
+}
+
+.home-search button{
+    padding:18px 40px;
+    border:none;
+    background:#222;
+    color:white;
+    border-radius:0 50px 50px 0;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.home-search button:hover{
+    background:black;
+}
+
+/* ================= SECTION ================= */
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    margin:70px 0 50px;
+}
+
+/* ================= PRODUCT GRID ================= */
+
+.featured-grid{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    padding-bottom:80px;
+}
+
+/* ================= PRODUCT CARD ================= */
+
+.product-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    text-decoration:none;
+    color:#222;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+}
+
+.product-info{
+    padding:25px;
+    text-align:center;
+}
+
+.product-info h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.price{
+    color:orange;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.view-btn{
+    display:inline-block;
+    background:orange;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* ================= FILTER ================= */
+
+.filter-section{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:40px 0;
+}
+
+.filter-btn{
+    background:white;
+    padding:12px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#222;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.filter-btn:hover{
+    background:orange;
+    color:white;
+}
+
+/* ================= PRODUCT DETAILS ================= */
+
+.product-detail-wrapper{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.product-detail-card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    display:flex;
+    gap:50px;
+    align-items:center;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.detail-image{
+    width:450px;
+    border-radius:15px;
+}
+
+.detail-info-section{
+    flex:1;
+}
+
+.detail-info-section h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.detail-price{
+    color:orange;
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.detail-description{
+    line-height:1.8;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.buy-btn{
+    background:orange;
+    color:white;
+    border:none;
+    padding:16px 30px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.buy-btn:hover{
+    background:#ff6600;
+}
+
+/* ================= ORDERS ================= */
+
+.order-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.order-card h3{
+    margin-bottom:15px;
+}
+
+.order-status{
+    color:green;
+    font-weight:700;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1200px){
+
+    .featured-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .featured-grid{
+        grid-template-columns:1fr;
+    }
+
+    .product-detail-card{
+        flex-direction:column;
+    }
+
+    .detail-image{
+        width:100%;
+    }
+
+    .home-search form{
+        flex-direction:column;
+    }
+
+    .home-search input{
+        border-radius:50px;
+        margin-bottom:12px;
+    }
+
+    .home-search button{
+        border-radius:50px;
+    }
+}
